@@ -4,9 +4,9 @@ class basicapp {
 
     //Basic activation data
     public $basic = [
-        'name' => 'Basic app',
-        'description' => 'Módulo de Gestión orientado a el app básica',
-        'version' => '1.0.0',
+        'name' => 'Basic app chat',
+        'description' => 'Módulo de Gestión orientado a el app básica (Chat)',
+        'version' => '1.0.1',
         'vendor' => 'Inforfenix',
         'package' => 'sephora.basic.app',
         'min-sephora' => '0.0.1',
