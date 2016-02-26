@@ -43,6 +43,24 @@ class basicapp {
             'action' => '\App\modules\basicapp\core\controllers\ChatController@ajaxSendMessage'
         ]
     ];
+    //Unsafe  (out of the laravel logged in middleware security)
+    public $unsafeRoutes = [
+        1 => [
+            'type' => 'GET',
+            'url' => '/chat/app/getuuid',
+            'action' => '\App\modules\basicapp\core\controllers\ChatController@ajaxGetUUID'
+        ],
+        2 => [
+            'type' => 'POST',
+            'url' => '/chat/app/getMessages',
+            'action' => '\App\modules\basicapp\core\controllers\ChatController@ajaxAppFetchMessages'
+        ],
+        3 => [
+            'type' => 'POST',
+            'url' => '/chat/app/sendMessage',
+            'action' => '\App\modules\basicapp\core\controllers\ChatController@ajaxAppSendMessage'
+        ]
+    ];
     //Menus
     public $menus = [
          0 => [

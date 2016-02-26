@@ -24,7 +24,7 @@ use App\Http\Helpers\HookHelper;
                     <h3 class="box-title">Conversaciones</h3>
                 </div>
                 <!-- /.box-header -->
-                <div class="box-body">
+                <div class="box-body" style="overflow: scroll; max-height: 400px;">
                     <table class="table table-bordered" id="tableThreads"></table>
                 </div>
             </div>
@@ -73,7 +73,7 @@ use App\Http\Helpers\HookHelper;
         //Set the auto-refresh interval for the thread list
         window.setInterval(function () {
             loadThreadList();
-        }, 4000);
+        }, 25000);
         //Set the auto-refresh interval for the chat
         window.setInterval(function () {
             loadThread(fk_sender);
